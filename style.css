@@ -95,22 +95,38 @@ ul { list-style: none; }
 
 /* Logo */
 .logo {
-  font-family: var(--ff-head);
-  font-size: 1.55rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.7rem;
   font-weight: 700;
   color: var(--gold);
   flex-shrink: 0;
-  letter-spacing: -.01em;
+  letter-spacing: -.02em;
 }
-.logo-wrap {
-  display: block;
-  height: 44px;
+.logo-combination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   flex-shrink: 0;
 }
-.logo-img {
-  height: 100%;
-  width: auto;
+.logo-symbol {
+  width: 56px;
+  height: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+}
+.logo-symbol img {
+  width: 100%;
+  height: auto;
   display: block;
+}
+.logo-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: -.02em;
+  line-height: 1;
 }
 
 /* Nav links */
@@ -922,12 +938,12 @@ ul { list-style: none; }
 ══════════════════════════════════════════ */
 @media (min-width: 1200px) {
   /* Navbar logo & links scaling */
-  .logo-wrap {
-    height: 52px;
-    width: auto;
+  .logo-text {
+    font-size: 2.05rem;
   }
-  .logo-img {
-    margin-top: 0;
+  .logo-symbol {
+    width: 64px;
+    height: 23px;
   }
   .nav-link {
     font-size: .88rem;
