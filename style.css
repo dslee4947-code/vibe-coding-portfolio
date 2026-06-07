@@ -86,6 +86,8 @@ ul { list-style: none; }
 
 .nav-container {
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -917,4 +919,130 @@ ul { list-style: none; }
 
   .footer-container { flex-direction: column; text-align: center; gap: .4rem; }
 }
+
+/* ══════════════════════════════════════════
+   WIDESCREEN — 1200px or wider
+══════════════════════════════════════════ */
+@media (min-width: 1200px) {
+  /* Navbar logo & links scaling */
+  .logo-wrap {
+    height: 52px;
+    width: 172px;
+  }
+  .logo-img {
+    margin-top: -10px;
+  }
+  .nav-link {
+    font-size: .88rem;
+    padding: .45rem 1.1rem;
+  }
+  .nav-phone {
+    font-size: .95rem;
+  }
+  .nav-phone-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Container scaling */
+  .nav-container,
+  .hero-container,
+  .services-container,
+  .stats-row,
+  .experience-container,
+  .works-container,
+  .testimonials-container,
+  .cta-container,
+  .footer-container,
+  .purchase-container,
+  .lifecycle-container {
+    max-width: 1360px;
+  }
+
+  /* Hero section scaling */
+  .hero-container {
+    gap: 6rem;
+    padding: 130px 0 130px;
+  }
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  .hero-tagline {
+    font-size: 1.15rem;
+  }
+  .hero-years {
+    gap: 1.2rem;
+  }
+  .years-number {
+    font-size: 6.8rem;
+  }
+  .years-label {
+    font-size: .85rem;
+  }
+  .hero-badge {
+    padding: 1.6rem 2.2rem;
+  }
+  .badge-text {
+    font-size: .85rem;
+  }
+  
+  /* Sections styling scale up */
+  .section-title {
+    font-size: 3.2rem;
+  }
+  .services-desc {
+    font-size: 1.05rem;
+  }
+  .service-info h3 {
+    font-size: 1.25rem;
+  }
+  .service-info p {
+    font-size: .95rem;
+  }
+  .stat-number {
+    font-size: 6rem;
+  }
+  .stat-label {
+    font-size: .95rem;
+  }
+  
+  /* Works and Purchase Cards */
+  .pc-title {
+    font-size: 24px;
+  }
+  .pc-desc {
+    font-size: 15px;
+  }
+  .purchase-card {
+    padding: 40px 28px;
+  }
+  .entity-card {
+    padding: 40px 36px;
+  }
+  .entity-card h3 {
+    font-size: 26px;
+  }
+  .entity-card .entity-subtitle {
+    font-size: 14px;
+  }
+  .entity-card ul li {
+    font-size: 15px;
+  }
+  .exp-company {
+    font-size: 1.1rem;
+  }
+  .exp-role {
+    font-size: 1.25rem;
+  }
+  .exp-desc {
+    font-size: .95rem;
+  }
+  .work-list li {
+    font-size: 1rem;
+  }
+  .testimonial-text {
+    font-size: 1.05rem;
+  }
+}
+
 
